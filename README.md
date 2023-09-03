@@ -1,6 +1,6 @@
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/hacs/integration)
 
-# hass-bha-icons
+# hass-floor-icons
 
 Custom icon pack designed for Home Assistant.
 
@@ -21,14 +21,14 @@ Add this repo via HACS as a plugin and install.  See the [HACS install guide](./
 
 ### Manual
 
-Copy the `hass-bha-icons.js` file into `<config>/www/` where `<config>` is your home-assistant config directory (the directory where your `configuration.yaml` resides).
+Copy the `hass-floor-icons.js` file into `<config>/www/` where `<config>` is your home-assistant config directory (the directory where your `configuration.yaml` resides).
 
 Add the folowing to the `frontend` section of your `configuration.yaml`
 
 ```yaml
 frontend:
   extra_module_url:
-    - /local/hass-bha-icons.js
+    - /local/hass-floor-icons.js
 ```
 
 Or add the following to your lovelace configuration using the Raw Config editor under Configure UI or ui-lovelace.yaml if using YAML mode.
@@ -36,14 +36,14 @@ Or add the following to your lovelace configuration using the Raw Config editor 
 ```yaml
 resources:
   - type: js
-    url: /local/hass-bha-icons.js
+    url: /local/hass-floor-icons.js
 ```
 
 Restart home-assistant.
 
 ## Using
 
-The icons uses the prefix `bha:`.
+The icons uses the prefix `floor:`.
 
 Example:
 
